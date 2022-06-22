@@ -1,0 +1,27 @@
+import java.io.*;
+import java.util.*;
+ 
+public class Solution {
+  public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+
+    String sign = sc.next();
+    String xrem = sign.replace("X","");
+    String irem = xrem.replace("I","");
+    String orem = irem.replace("O","");
+    String srem = orem.replace("S","");
+    String hrem = srem.replace("H","");
+    String zrem = hrem.replace("Z","");
+    String nrem = zrem.replace("N","");
+
+    int greatsign = nrem.length();
+
+    if (greatsign == 0){
+        System.out.println("YES");
+    }
+    else {
+        System.out.println("NO");
+    }
+
+    }
+}
